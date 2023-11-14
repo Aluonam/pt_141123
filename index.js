@@ -1,5 +1,5 @@
 
-
+// ----------EJERCICIO 1-----------------------
 const numbers = [1, 2, 3, 4, 5];
 
 const squaredNumbers = numbers.map((num)=>{
@@ -7,5 +7,18 @@ const squaredNumbers = numbers.map((num)=>{
     console.log(squared)
     // alert(squared)
 })
-
 squaredNumbers
+
+// ----------EJERCICIO 2-----------------------
+const students = [
+    { name: 'Alice', grade: 85 },
+    { name: 'Bob', grade: 90 },
+    { name: 'Charlie', grade: 78 },
+    { name: 'David', grade: 95 }
+  ];
+
+const highGrades = students.filter(student => student.grade >= 90);
+console.log('High Grades:', highGrades);
+
+const gradeSummaries1 = students.map(student=> `${student.name} : ${student.grade}`)
+console.log("estudiante y nota: ",gradeSummaries1)
