@@ -17,8 +17,5 @@ const students = [
     { name: 'David', grade: 95 }
   ];
 
-const highGrade = () =>{
-    const grade = students.map((obj)=>{console.log(obj.grade)})
-}
-
-highGrade()
+const highGrades = students.filter(student => student.grade >= 90);
+console.log('High Grades:', highGrades);
