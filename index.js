@@ -19,3 +19,6 @@ const students = [
 
 const highGrades = students.filter(student => student.grade >= 90);
 console.log('High Grades:', highGrades);
+
+const gradeSummaries1 = students.map(student=> `${student.name} : ${student.grade}`)
+console.log("estudiante y nota: ",gradeSummaries1)
